@@ -100,7 +100,7 @@ def ip_lookup():
     ip = input("IP à analyser : ").strip()
 
     try:
-        r = requests.get(f"https://ip-api.com/json/{ip}", timeout=10)
+        r = requests.get(f"http://ip-api.com/json/{ip}", timeout=10)
         data = r.json()
 
         clear()
